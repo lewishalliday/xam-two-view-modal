@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="XF.ModalNavigation.Views.PageTwo"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Page Two">
+    <StackLayout Margin="20"
+                 HorizontalOptions="Center"
+                 VerticalOptions="CenterAndExpand">
+        <Button Clicked="Button_Clicked" Text="Go to Page Two" />
+
+        <Button Margin="0,30,0,0"
+                Clicked="Button2_Clicked"
+                Text="Open Modal" />
+    </StackLayout>
+
+</ContentPage>
