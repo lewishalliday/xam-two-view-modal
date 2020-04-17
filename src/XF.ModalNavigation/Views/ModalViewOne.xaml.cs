@@ -1,19 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 using Xamarin.Forms;
 
 namespace XF.ModalNavigation.Views
 {
-    public partial class ModalViewOne : ModalView
+    public partial class ModalViewOne : ContentView
     {
         public ModalViewOne()
         {
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs args)
+        public event EventHandler GoForwardClicked;
+
+        private void NavToNextView(object sender, EventArgs args)
         {
-            RaiseGoForwardClicked();
+            GoForwardClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

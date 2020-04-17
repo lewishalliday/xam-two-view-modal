@@ -1,19 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 using Xamarin.Forms;
 
 namespace XF.ModalNavigation.Views
 {
-    public partial class ModalViewTwo : ModalView
+    public partial class ModalViewTwo : ContentView
     {
         public ModalViewTwo()
         {
             InitializeComponent();
         }
 
-        private void Button_Clicked(object sender, EventArgs args)
+        public event EventHandler CloseModalClicked;
+
+        private void CloseModal(object sender, EventArgs args)
         {
-            RaiseCloseModalClicked();
+            CloseModalClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-
 using Xamarin.Forms;
 
 namespace XF.ModalNavigation.Views
@@ -19,7 +17,7 @@ namespace XF.ModalNavigation.Views
 
         private async void Button2_Clicked(object sender, EventArgs args)
         {
-            await App.Current.MainPage.Navigation.PushModalAsync(new ModalOne());
+            await App.Current.MainPage.Navigation.PushModalAsync(new ModalPageOne());
         }
     }
 }
