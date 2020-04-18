@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8" ?>
 <ContentPage
-    x:Class="XF.ModalNavigation.Views.ModalPageOne"
+    x:Class="XF.ModalNavigation.Views.ModalPageTwo"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    Title="Modal Page One">
+    Title="Modal Page Two">
     <ContentPage.ToolbarItems>
         <ToolbarItem
             Clicked="Close_Clicked"
@@ -12,14 +12,9 @@
             Text="Close" />
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <Grid>
-            <Button
-                Clicked="Button_Clicked"
-                HeightRequest="60"
-                HorizontalOptions="Center"
-                Text="Go to page two"
-                VerticalOptions="Center"
-                WidthRequest="120" />
-        </Grid>
+        <Label
+            HorizontalOptions="Center"
+            Text="You're at the last page"
+            VerticalOptions="Center" />
     </ContentPage.Content>
 </ContentPage>
