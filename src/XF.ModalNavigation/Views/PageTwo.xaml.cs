@@ -17,7 +17,8 @@ namespace XF.ModalNavigation.Views
 
         private async void Button2_Clicked(object sender, EventArgs args)
         {
-            await App.Current.MainPage.Navigation.PushModalAsync(new ModalPageOne());
+            var page = new ModalPageOne();
+            await Navigation.PushModalAsync(new CustomNavigation(page));
         }
     }
 }
